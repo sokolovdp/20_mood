@@ -1,0 +1,7 @@
+#ignore all subfolders
+**/
+
+#ignore files
+*.bak
+*.txt
+

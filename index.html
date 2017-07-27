@@ -1,25 +1,133 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Настроение</title>
-  <script id="quotes_json" type="application/json">
-    [
-      {
-        "phrase": "Кукурузные хлопья - теперь без асбеста!",
-        "signature": "©Неизвестный маркетолог"
-      },
-      {
-        "phrase": "Собираюсь жить вечно, пока всё идёт нормально"
-      },
-      {
-        "phrase": "Вывеска над кафе — '\u003cМы открылись\u003e'. Что-то не так. Где же '\u003c/Мы открылись\u003e'?"
-      },
-      {
-        "phrase": "Если ты будешь усердно работать по 8 часов в день, то обязательно станешь боссом и начнешь работать по 12"
-      }
-    ]
-  </script>
-</head>
-<body>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">  <!--  bootstrap styled website to be responsive on mobile -->
+        <title>Zen of Python</title>
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+        <link rel="stylesheet" type="text/css"  href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://use.fontawesome.com/b02e3ddb3a.js"></script>
+        <link rel="stylesheet" type="text/css"  href="zenapp.css">
+        <script id="zen_json" type="application/json">
+        [
+          {"zen": "Beautiful is better than ugly"
+          },
+          {
+            "zen": "Explicit is better than implicit"
+          },
+          {
+            "zen": "Simple is better than complex"
+          },
+          {
+            "zen": "Complex is better than complicated"
+          },
+          {
+            "zen": "Flat is better than nested"
+          },
+          {
+            "zen": "Sparse is better than dense"
+          },
+            {
+            "zen": "Readability counts"
+          },
+            {
+            "zen": "Special cases aren't special enough to break the rules"
+          },
+            {       
+            "zen": "Although practicality beats purity"
+          },
+          {
+            "zen": "Errors should never pass silently"
+          },
+          {
+            "zen": "Errors should never pass silently, Unless explicitly silenced"
+          },
+          {
+            "zen": "In the face of ambiguity, refuse the temptation to guess"
+          },
+          {
+            "zen": "There should be one - and preferably only one - obvious way to do it"
+          },
+            {
+            "zen": "Although that way may not be obvious at first unless you're Dutch"
+          },
+            {
+            "zen": "Now is better than never"
+          },
+            {       
+            "zen": "Although never is often better than *right* now"
+          },
+         {       
+            "zen": "If the implementation is hard to explain, it's a bad idea"
+          },
+          {       
+            "zen": "If the implementation is easy to explain, it may be a good idea"
+          },
+          {       
+            "zen": "Namespaces are one honking great idea -- let's do more of those!"
+          }
+        ]
+        </script>
+        
+        <script id="zen_images" type="application/json">
+        [
+          "01_image.jpg", "02_image.jpg",  "04_image.jpg", "05_image.jpg", "06_image.jpg", "07_image.jpg", 
+          "08_image.jpg", "09_image.jpg",  "11_image.jpg"
+        ]
+        </script>
+        
+    </head>
+
+    <body id="Body"  background="">
+        <nav class="navbar navbar-default">
+          <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="https://www.python.org/dev/peps/pep-0020/">Zen of Python</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav">
+                
+                
+              </ul>
+ 
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="mailto:sokolovdp@gmail.com">Developer <i class="fa fa-handshake-o" aria-hidden="true"></i></a></li>
+              </ul>
+            </div><!-- /.navbar-collapse -->
+          </div><!-- /.container-fluid -->
+        </nav>
+    
+    
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                <div id="content">
+                    <div id="divH3">
+                        <h3 id="H3">Zen of the Day:</h3>
+                    </div>
+                    <hr>
+                    <div id="divH1">
+                        <h1 id="H1"></h1>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+
+        <script type="text/javascript" src="zen.js"></script>
+        
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+              crossorigin="anonymous"></script>
+        <script type="text/javascript"  src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ 
 </body>
+
 </html>

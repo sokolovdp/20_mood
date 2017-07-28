@@ -1,33 +1,33 @@
-html {
+.main-html {
     height: 100%;   
 }
 
-body {
+.main-body {
     background-size: cover; 
     background-position: center;
     font-family: 'Lato', sans-serif;
     color: white;
 }
 
-#content {
+.col-lg-12 {
     text-align: center;
     padding-top: 15%;
-    text-shadow: 0px 4px 3px red,       /* rgba(0,0,0,0.4) */
-                 0px 8px 13px orange,   /* rgba(0,0,0,0.1) */
-                 0px 18px 23px yellow;  /* rgba(0,0,0,0.1) */
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.4), /*  red,  */      
+                 0px 8px 13px rgba(0,0,0,0.2), /* orange,  */ 
+                 0px 18px 23px rgba(0,0,0,0.1); /* yellow;   */
 }
 
-h1 {
+.zen-phrase {
     font-weight: 700;
     font-size: 5em;
 }
 
-h3 {
+.zen-day {
     font-weight: 700;
     font-size: 3em;
 }
 
-hr {
+.zen-line {
     width: 500px;
     border-top: 1px solid #f8f8f8;   /* shadow effect */
     border-bottom: 1px solid rgba(0,0,0,0.2);

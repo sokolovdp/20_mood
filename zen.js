@@ -1,30 +1,30 @@
 function randomInt(range) {
-    return Math.floor((Math.random() * (range - 1)));
+	return Math.floor((Math.random() * (range - 1)));
 }
 
 function getJsonData(idName) {
-    var manifest = document.getElementById(idName).innerHTML;
-    return JSON.parse(manifest)
+	var jsonElement = document.getElementById(idName).innerHTML;
+	return JSON.parse(jsonElement)
 }
 
 function replaceH1Text(zen) {
-    var h1 = document.getElementById("h1");
-    h1.innerHTML = zen;
+	var h1 = document.getElementById("h1");
+	h1.innerHTML = zen;
 }
 
 function replaceBodyBackGroundImage(image) {
-    var body = document.getElementById("body");
-    body.setAttribute("background", image)
+	var body = document.getElementById("body");
+	body.setAttribute("background", image)
 }
 
-function makeZen(){
-    var zenArray = getJsonData("zen_json");
-    var zenOfDay = zenArray[randomInt(zenArray.length)]["zen"];
-    var imageArray = getJsonData("zen_images");
-    var imageOfDay = "./static/" + imageArray[randomInt(imageArray.length)];
+function makeZen() {
+	var zenArray = getJsonData("zen_json");
+	var zenOfDay = zenArray[randomInt(zenArray.length)].zen;
+	var imageArray = getJsonData("zen_images");
+	var imageOfDay = "./static/" + imageArray[randomInt(imageArray.length)];
 
-    replaceH1Text(zenOfDay);
-    replaceBodyBackGroundImage(imageOfDay);
+	replaceH1Text(zenOfDay);
+	replaceBodyBackGroundImage(imageOfDay);
 }
 
-window.onload = makeZen; 
+window.onload = makeZen;

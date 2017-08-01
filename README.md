@@ -1,7 +1,7 @@
-# Site of the Zen of Python 
+# Site of the Jokes
 
-At each visit site shows one of 19th Zen of Python statements with random background.
-You can see it here: [Zen of Python](https://sokolovdp.github.io)
+At each visit site randomly shows one phrase and image as background from json array
+You can see it here: [Fun site model](https://sokolovdp.github.io)
 
 # Project Goals
 

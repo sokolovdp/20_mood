@@ -1,78 +1,27 @@
 <!DOCTYPE html>
-<html class="main-html">
+<html class="main-html" lang='ru'>
     <head id="head">
+        <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">  <!--  bootstrap styled website to be responsive on mobile -->
-        <title>Zen of Python</title>
-        <link rel="icon" href="./static/favicon.ico" type="image/x-icon">
+        <title> </title>
+        <link rel="icon" href="./static/cat.ico" type="image/x-icon">
         <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
         <link rel="stylesheet" type="text/css"  href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <script src="https://use.fontawesome.com/b02e3ddb3a.js"></script>
-        <link rel="stylesheet" type="text/css"  href="zen.css">
-        <script id="zen_json" type="application/json">
-        [
-          {"zen": "Beautiful is better than ugly"
-          },
-          {
-            "zen": "Explicit is better than implicit"
-          },
-          {
-            "zen": "Simple is better than complex"
-          },
-          {
-            "zen": "Complex is better than complicated"
-          },
-          {
-            "zen": "Flat is better than nested"
-          },
-          {
-            "zen": "Sparse is better than dense"
-          },
-            {
-            "zen": "Readability counts"
-          },
-            {
-            "zen": "Special cases aren't special enough to break the rules"
-          },
-            {       
-            "zen": "Although practicality beats purity"
-          },
-          {
-            "zen": "Errors should never pass silently"
-          },
-          {
-            "zen": "Errors should never pass silently, unless explicitly silenced"
-          },
-          {
-            "zen": "In the face of ambiguity, refuse the temptation to guess"
-          },
-          {
-            "zen": "There should be one - and preferably only one - obvious way to do it"
-          },
-            {
-            "zen": "... although that way may not be obvious at first unless you're Dutch"
-          },
-            {
-            "zen": "Now is better than never"
-          },
-            {       
-            "zen": "Although never is often better than *right* now"
-          },
-         {       
-            "zen": "If the implementation is hard to explain, it's a bad idea"
-          },
-          {       
-            "zen": "If the implementation is easy to explain, it may be a good idea"
-          },
-          {       
-            "zen": "Namespaces are one honking great idea -- let's do more of those!"
-          }
-        ]
-        </script>
-        <script id="zen_images" type="application/json">
-        [
-          "01_image.jpg", "02_image.jpg",  "05_image.jpg", "06_image.jpg", "07_image.jpg", 
-          "08_image.jpg", "09_image.jpg",  "11_image.jpg"
-        ]
+        <link rel="stylesheet" type="text/css"  href="content.css">
+        <script id="contentJson" type="application/json">
+            [
+            {"msg": "Наслаждение дескриминацией", "pic": "01_image.jpg"},
+            {"msg": "Боишься спать один? Заведи котёнка!", "pic": "02_image.jpg"},
+            {"msg": "Жрать захочешь, не так раскорячешься!", "pic": "03_image.jpg"},
+            {"msg": "Рыбки? Нет, не видел...", "pic": "04_image.jpg"},
+            {"msg": "Вот так выглядишь, когда сам себе ставишь лайки", "pic": "05_image.jpg"},
+            {"msg": "Стар я уже по бабам бегать, несите их сюда", "pic": "06_image.jpg"},
+            {"msg": "Это всё грязные инсинуации!", "pic": "07_image.jpg"},
+            {"msg": "Мисс демотивация", "pic": "08_image.jpg"},
+            {"msg": "Хочется жить без мата, но блять!", "pic": "09_image.jpg"},
+            {"msg": "Установка дравейра устройства завершена, необходим перезапуск системы!", "pic": "10_image.jpg"}
+            ]
         </script>
     </head>
     <body class="main-body" id="body"  background="">
@@ -86,12 +35,12 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" href="https://www.python.org/dev/peps/pep-0020/">Zen of Python</a>
+              <a class="navbar-brand" href="http://www.sokolovdp.info">Мой блог</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <ul class="nav navbar-nav navbar-right">
-                <li><a href="mailto:sokolovdp@gmail.com">Developer <i class="fa fa-handshake-o" aria-hidden="true"></i></a></li>
+                <li><a href="mailto:sokolovdp@gmail.com">Пишите письма! &nbsp; <i class="fa fa-handshake-o" aria-hidden="true"></i></a></li>
               </ul>
             </div><!-- /.navbar-collapse -->
           </div><!-- /.container-fluid -->
@@ -99,15 +48,16 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h3 class="zen-day">Zen of the Day:</h3>
-                    <hr class="zen-line">
-                    <h1 class="zen-phrase" id="h1"></h1>
+                    <h3 class="day"></h3>
+                    <hr class="divider">
+                    <h1 class="phrase"></h1>
                 </div>
             </div>
         </div>
+        
         <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-              crossorigin="anonymous"></script>
+                crossorigin="anonymous"></script>
         <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <script type="text/javascript" src="zen.js"></script>
+        <script type="text/javascript" src="content.js"></script>
     </body>
 </html>

@@ -17,17 +17,17 @@
                  0px 18px 23px rgba(0,0,0,0.1); /* yellow;   */
 }
 
-.zen-phrase {
-    font-weight: 700;
-    font-size: 5em;
-}
-
-.zen-day {
+.phrase {
     font-weight: 700;
     font-size: 3em;
 }
 
-.zen-line {
+.day {
+    font-weight: 700;
+    font-size: 2em;
+}
+
+.divider {
     width: 500px;
     border-top: 1px solid #f8f8f8;   /* shadow effect */
     border-bottom: 1px solid rgba(0,0,0,0.2);
